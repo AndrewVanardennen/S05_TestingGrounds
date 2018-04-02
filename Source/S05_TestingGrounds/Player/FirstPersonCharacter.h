@@ -62,6 +62,8 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Setup")
 	TSubclassOf<class AGun> GunBlueprint;
 
+	UPROPERTY(EditAnywhere, Category = "Setup")
+	int32 Test = 1;
 private:
 
 	AGun* Gun;
