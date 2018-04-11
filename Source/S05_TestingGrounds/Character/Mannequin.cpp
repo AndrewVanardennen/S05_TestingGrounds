@@ -82,7 +82,7 @@ void AMannequin::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 void AMannequin::UnPossessed() 
 {
 	Super::UnPossessed();
-
+	if (Gun == nullptr) return;
 	if (!ensure(Gun))
 	{
 		UE_LOG(LogTemp, Error, TEXT("Gun is not available"))
